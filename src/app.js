@@ -10,7 +10,7 @@ app.get("/", (_req, res) => {
   });
 });
  
-app.get("actu", (_req, res) => {
+app.get("/actu", (_req, res) => {
   res.json({
     message: "Saludos XD",
     docs: ["/health", "/version"]

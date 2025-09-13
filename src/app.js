@@ -10,6 +10,12 @@ app.get("/", (_req, res) => {
   });
 });
  
+app.get("/", (_req, res) => {
+  res.json({
+    message: "Saludos XD",
+    docs: ["/health", "/version"]
+  });
+});
 app.get("/health", (_req, res) => {
   res.json({ status: "ok", uptime: process.uptime() });
 });
